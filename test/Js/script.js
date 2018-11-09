@@ -10,7 +10,7 @@ function initMap() {
         disableDefaultUI: true
     });
     var icon = {
-        url: "../Image/marker2.png", // url
+        url: "Image/mark.png", // url
         scaledSize: new google.maps.Size(28, 40), // scaled size
         origin: new google.maps.Point(0,0), // origin
         anchor: new google.maps.Point(0, 0) // anchor

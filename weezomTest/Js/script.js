@@ -48,7 +48,7 @@ $(document).ready(function () {
     catOptions.click(function() {
         $(".category span").text($(this).text());
     });
-    $(".menu").click(function() {
+    $("div.menu").click(function() {
         $(".podmenu").slideToggle();
     });
     var flag = true;

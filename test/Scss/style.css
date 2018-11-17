@@ -1,5 +1,7 @@
 body {
   font-family: "League Gothic", sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 div {
@@ -227,6 +229,7 @@ header .slider .text-wrap p {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   padding: 13px;
+  max-width: 800px;
 }
 
 header .slider .text-wrap span {
@@ -257,6 +260,14 @@ header .slider .people-bg .people-wrap .item {
   border-color: white;
   background-color: white;
   opacity: 0.902;
+}
+
+header .slider .people-bg .people-wrap .item:last-child {
+  margin-right: 33px;
+}
+
+header .slider .people-bg .people-wrap .item:first-child {
+  margin-left: 33px;
 }
 
 header .slider .people-bg .people-wrap .item + .item {
@@ -310,6 +321,16 @@ header .slider .people-bg .people-wrap .item span {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px dotted #d5d5d5;
+}
+
+.main .main-wrap .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main .main-wrap .left-content .about {
@@ -527,10 +548,18 @@ header .slider .people-bg .people-wrap .item span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 32px;
 }
 
-.main .main-wrap .center-content .why-should .wrap-center .item {
+.main .main-wrap .center-content .why-should .wrap-center .item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 147px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.main .main-wrap .center-content .why-should .wrap-center .item-wrap .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,9 +582,10 @@ header .slider .people-bg .people-wrap .item span {
   color: white;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 32px;
 }
 
-.main .main-wrap .center-content .why-should .wrap-center .autor {
+.main .main-wrap .center-content .why-should .wrap-center .item-wrap .autor {
   margin-left: 11px;
   margin-right: 28px;
   background: #22aaec url(../Svg/user.svg) no-repeat center/contain;
@@ -567,6 +597,7 @@ header .slider .people-bg .people-wrap .item span {
   font-family: "Arial";
   color: #5c5c5c;
   line-height: 1.8;
+  margin-bottom: 32px;
 }
 
 .main .main-wrap .center-content .why-should .wrap-bottom {
@@ -702,10 +733,14 @@ header .slider .people-bg .people-wrap .item span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 363px;
+  width: 100%;
   height: 214px;
   background: #eaeaea;
-  padding: 26px 14px 0 30px;
+  padding: 26px 14px 30px 30px;
+}
+
+.main .main-wrap .center-content .comments-card-wrap .comments-card:first-child {
+  margin-right: 19px;
 }
 
 .main .main-wrap .center-content .comments-card-wrap .comments-card::before {
@@ -717,6 +752,9 @@ header .slider .people-bg .people-wrap .item span {
   height: 30px;
   background: url(../Image/shadow.png) no-repeat center;
   z-index: -1;
+  background-size: 100% 40px;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .main .main-wrap .center-content .comments-card-wrap .comments-card:first-child .text {
@@ -742,6 +780,8 @@ header .slider .people-bg .people-wrap .item span {
 }
 
 .main .main-wrap .center-content .comments-card-wrap .comments-card .text {
+  height: 69px;
+  overflow: hidden;
   font-size: 10px;
   font-family: "Arial";
   color: #5c5c5c;
@@ -763,7 +803,7 @@ header .slider .people-bg .people-wrap .item span {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 363px;
+  width: 100%;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,7 +871,7 @@ header .slider .people-bg .people-wrap .item span {
   margin: 30px 0 34px 13px;
   background: #f4f3f3;
   background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.02) 100%);
-  width: 740px;
+  width: 100%;
   height: 81px;
 }
 
@@ -843,8 +883,9 @@ header .slider .people-bg .people-wrap .item span {
   width: 100%;
   height: 30px;
   background: url(../Image/shadow.png) no-repeat center;
-  background-size: 757px 40px;
+  background-size: 101% 40px;
   z-index: -1;
+  opacity: 0.7;
 }
 
 .map-sect .title {

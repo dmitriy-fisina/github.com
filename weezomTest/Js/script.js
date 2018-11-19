@@ -39,11 +39,12 @@ $(document).ready(function () {
         var selectCategory = $(".select-category");
         selectCategory.toggle();
     });
-    $(document).mouseup(function (e) {
-            if (selectCategory.has(e.target).length === 0){
-                selectCategory.hide();
-            }
-        });
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".selectCategory").length) {
+            $('.selectCategory').hide();
+  }
+     e.stopPropagation();
+});
     var catOptions = $("li.optjq");
     catOptions.click(function() {
         $(".category span").text($(this).text());

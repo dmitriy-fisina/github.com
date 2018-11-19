@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
     $(".category").click(function () {
         var selectCategory = $(".select-category");
-        selectCategory.toggle();
+        selectCategory.toggle(display);
         $(document).mouseup(function (e) {
             if (selectCategory.has(e.target).length === 0){
                 selectCategory.hide();

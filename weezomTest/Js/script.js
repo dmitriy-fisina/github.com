@@ -37,13 +37,13 @@ $(document).ready(function () {
     });
     $(".category").click(function () {
         var selectCategory = $(".select-category");
-        selectCategory.toggle(display);
-        $(document).mouseup(function (e) {
+        selectCategory.toggle();
+    });
+    $(document).mouseup(function (e) {
             if (selectCategory.has(e.target).length === 0){
                 selectCategory.hide();
             }
         });
-    });
     var catOptions = $("li.optjq");
     catOptions.click(function() {
         $(".category span").text($(this).text());

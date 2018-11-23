@@ -92,7 +92,11 @@ header {
         }
     }
 }
-
+.copyright {
+    @include mq('tablet') {
+        margin-bottom: 12px;
+    }
+}
 main {
     .main-wrap {
         @include mq('tablet-small') {

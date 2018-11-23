@@ -68,12 +68,13 @@ li {
 
 .menu-mobile {
     position: fixed;
+    overflow-x: auto;
     padding-top: 15px;
     width: 100%;
     height: 100%;
     background: #fff;
     z-index: 10;
-    transform: translateY(-110%);
+    transform: translateY(-850px);
     transition: transform 0.3s ease-in-out;
 
     .menu-mobile-header {
@@ -131,6 +132,7 @@ li {
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 20px;
 
         .need-help {
             font-size: 14px;
@@ -165,12 +167,12 @@ li {
 
 .copyright {
     font-size: 12px;
+    margin-bottom: 9px;
     color: $light_gray;
     letter-spacing: 0;
     text-align: center;
     font-weight: bold;
     margin-top: 16px;
-    margin-bottom: 9px;
 }
 
 header {

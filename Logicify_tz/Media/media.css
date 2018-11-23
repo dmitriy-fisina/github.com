@@ -84,6 +84,12 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .copyright {
+    margin-bottom: 12px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   main .main-wrap {
     padding-top: 40px;

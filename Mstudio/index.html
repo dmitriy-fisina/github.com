@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/slider/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/range/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="plugins/slider/owl.carousel.min.js"></script>
+    <script src="plugins/range/ion.rangeSlider.js"></script>
+    <script src="js/script.js"></script>
+    <title>SoundResume</title>
+</head>
+
+<body>
+    <div class="screen-dimming"></div>
+    <header>
+        <div class="container-header">
+            <div class="header-wrap">
+                <div class="wrap-left">
+                    <a href="#" class="logo">SoundResume</a>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li class="select-menu">
+                                <a class="select-link" href="#">Жанры</a>
+                                <div class="submenu">
+                                        <ul>
+                                            <li><a href="#">Популярное</a></li>
+                                            <li>
+                                                <a href="#">Рок</a>
+                                                <ul>
+                                                    <li><a href="#">Альтернатива</a></li>
+                                                    <li><a href="#">Метал</a></li>
+                                                    <li><a href="#">Классический</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Джаз</a></li>
+                                            <li><a href="#">Техно</a></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="wrap-right">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="call-back"><span>+38 (050) 123-22-33</span></a>
+                    <div class="burger"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu-mobile">
+            <div class="container-header">
+                <ul>
+                    <li><a href="#">Популярное</a></li>
+                    <li>
+                        <a href="#">Рок</a>
+                        <ul>
+                            <li><a href="#">Альтернатива</a></li>
+                            <li><a href="#">Метал</a></li>
+                            <li><a href="#">Классический</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Джаз</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-slider owl-carousel">
+            <div class="item">
+                <div class="container-main">
+                    <h1>Просто лучшая студия звукозаписи "SoundResume"</h1>
+                    <div class="text">
+                        <p>У нас индивидуальный подход к каждому клиенту!!!</p>
+                        <p>Cкидки в зависимости от объёма заказов.</p>
+                    </div>
+                    <a href="#record" class="record anchor">Записаться</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container-main">
+                    <h1>Просто лучшая студия звукозаписи "SoundResume"</h1>
+                    <div class="text">
+                        <p>У нас индивидуальный подход к каждому клиенту!!!</p>
+                        <p>Cкидки в зависимости от объёма заказов.</p>
+                    </div>
+                    <a href="#record" class="record">Записаться</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container-main">
+                    <h1>Просто лучшая студия звукозаписи "SoundResume"</h1>
+                    <div class="text">
+                        <p>У нас индивидуальный подход к каждому клиенту!!!</p>
+                        <p>Cкидки в зависимости от объёма заказов.</p>
+                    </div>
+                    <a href="#record" class="record">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container-main">
+            <h2 class="title">О нас</h2>
+            <div class="about-us">
+                <p><span class="color">SoundResume</span> – это студийный комплекс <span class="line">премиум-класса в</span>
+                    историческом центре столицы.
+                    Мы уже почти 20 лет являемся востребованными профессионалами столичной звукоиндустрии.</p>
+                <p>Студия предоставляет полный спектр услуг по производству аудиоконтента. SoundResume –
+                    это качественный звук и качественный сервис!</p>
+            </div>
+        </div>
+    </section>
+    <section class="price-record" id="record">
+        <div class="container-main">
+            <h2 class="title">Рассчитать стоимость записи</h2>
+            <form>
+                <div class="phone-name-wrap">
+                    <div class="media-wrap-name">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" name="name" id="name" placeholder="напр. Федор Омельченко">
+                    </div>
+                    <div class="media-wrap-phone">
+                        <label for="phone">Ваш телефон</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+38 (___) - ___ - __ - ___">
+                    </div>
+                </div>
+                <div class="media-wrap-row">
+                    <div class="wrap-range">
+                        <label for="range">Длительность</label>
+                        <input type="text" value="" name="range" id="range" onchange="onCangeRange()">
+                        <div class="wrap-minute">
+                            <div class="min-duration">0</div>
+                            <div class="max-duration">&gt 10 мин</div>
+                        </div>
+                    </div>
+                    <div class="select-wrap">
+                        <label for="select">Музыкальный жанр</label>
+                        <div id="select">Выберите из списка</div>
+                        <div class="select-click">
+                            <ul class="select-item">
+                                <li>Популарное</li>
+                                <li>Рок</li>
+                                <li>Рэп</li>
+                                <li>Джаз</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-wrap-row">
+                    <div class="approximate-cost">
+                        <span class="text">Примерная стоимость: </span>
+                        <span class="price">300 грн</span>
+                    </div>
+                    <button type="submit" class="record">Записаться</button>
+                </div>
+                <div class="check-wrap">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Присылать много спама</label>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="last-work">
+        <div class="container-main">
+            <div class="title-buttons-wrap">
+                <h2 class="title">Последние работы</h2>
+                <div class="buttons-wrap">
+                    <button class="music active">Музыка</button>
+                    <button class="clip">Клипы</button>
+                </div>
+            </div>
+            <div class="music-items visible-1">
+                <div class="item">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+                <div class="item">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay, заголовок в две строки</a>
+                </div>
+                <div class="item mobile-hide">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+                <div class="item mobile-hide">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+            </div>
+            <div class="clip-items display-none">
+                <div class="item">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+                <div class="item">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+                <div class="item mobile-hide">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+                <div class="item mobile-hide">
+                    <a href="#" class="img"><span>Cмотреть</span></a>
+                    <a href="#" class="signature">Запись альбома для GreenDay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-main">
+            <div class="name-company">2018. SoundResume</div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Medium.woff2') format('woff2'),
+        url('TTTravels-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-BoldItalic.woff2') format('woff2'),
+        url('TTTravels-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-ExtraBold.woff2') format('woff2'),
+        url('TTTravels-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-ExtraLightItalic.woff2') format('woff2'),
+        url('TTTravels-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Regular.woff2') format('woff2'),
+        url('TTTravels-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-DemiBoldItalic.woff2') format('woff2'),
+        url('TTTravels-DemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-BlackItalic.woff2') format('woff2'),
+        url('TTTravels-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-MediumItalic.woff2') format('woff2'),
+        url('TTTravels-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond L Demi';
+    src: url('SchnyderXCondLDemi.woff2') format('woff2'),
+        url('SchnyderXCondLDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Thin.woff2') format('woff2'),
+        url('TTTravels-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-ExtraBoldItalic.woff2') format('woff2'),
+        url('TTTravels-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-DemiBold.woff2') format('woff2'),
+        url('TTTravels-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-ExtraLight.woff2') format('woff2'),
+        url('TTTravels-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Italic.woff2') format('woff2'),
+        url('TTTravels-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Light.woff2') format('woff2'),
+        url('TTTravels-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Black.woff2') format('woff2'),
+        url('TTTravels-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-ThinItalic.woff2') format('woff2'),
+        url('TTTravels-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-LightItalic.woff2') format('woff2'),
+        url('TTTravels-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Bold.woff2') format('woff2'),
+        url('TTTravels-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond XL';
+    src: url('SchnyderXCondXLLight.woff2') format('woff2'),
+        url('SchnyderXCondXLLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond XL';
+    src: url('SchnyderXCondXLBold.woff2') format('woff2'),
+        url('SchnyderXCondXLBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond XL Demi';
+    src: url('SchnyderXCondXLDemi.woff2') format('woff2'),
+        url('SchnyderXCondXLDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond L';
+    src: url('SchnyderXCondLLight.woff2') format('woff2'),
+        url('SchnyderXCondLLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond L Demi';
+    src: url('SchnyderXCondLDemi.woff2') format('woff2'),
+        url('SchnyderXCondLDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond L';
+    src: url('SchnyderXCondLBold.woff2') format('woff2'),
+        url('SchnyderXCondLBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('TTTravels-Light.woff2') format('woff2'),
+        url('TTTravels-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond L Demi';
+    src: url('SchnyderXCondLDemi.woff2') format('woff2'),
+        url('SchnyderXCondLDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Schnyder X Cond L Demi';
+    src: url('SchnyderXCondLDemi.woff2') format('woff2'),
+        url('SchnyderXCondLDemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

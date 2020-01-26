@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="wrapper">
-        <div class="logo">
-          <img src="./img/ethereum-code-logo-52.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ink Lingerie</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <div class="wrapper">
+            <div class="logo">
+              <a href="#">
+                <img src="./img/First.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="burger"><span></span><span></span></div>
+            <nav class="menu">
+              <ul>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">Editorial</a></li>
+                <li><a href="#">Reportage</a></li>
+                <li><a href="#">Meet me</a></li>
+              </ul>
+            </nav>
+            <nav class="mobile-menu display-n">
+              <ul>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">Editorial</a></li>
+                <li><a href="#">Reportage</a></li>
+                <li><a href="#">Meet me</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Live Results</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </nav>
+      </header>
+      <div class="main-bg">
+        <div class="wrapper">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
       </div>
-    </div>
-  </header>
-  <div id="video-bg">
-    <video width="100%" height="auto" preload="auto" autoplay="autoplay"
-    loop="loop">
-        <source src="./img/videoFHD.mp4" type="video/mp4"></source>
-        <source src="./img/videoFHD.webm" type="video/webm"></source>
-    </video>
-</div>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+      <div class="svg-bg">
+        <svg
+          viewBox="0 0 610 728"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="svg-animate"
+            d="M139.416 31.4647C-159.248 309.376 101.471 367.764 214.964 1C336.277 136.37 767.08 317.52 345.08 103.2C594.544 524.358 643.701 254.041 589.613 727.477"
+            stroke="#2828BD"
+          />
+        </svg>
+      </div>
+      <div class="drag-me">Drag Me</div>
+      <div class="slider animated fadeIn delay-2s">
+        <div class="swiper-container gallery-thumbs ">
+          <div class="swiper-wrapper">
+            <div class="main-slide swiper-slide ">
+              <div class="photo ph2"></div>
+              <div class="photo ph1"></div>
+              <div class="photo ph3"></div>
+            </div>
+            <div class="main-slide swiper-slide">
+              <div class="photo custom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="swiper-container gallery-top text-wrap animated fadeIn delay-3s"
+      >
+        <div class="swiper-wrapper">
+          <div class="text swiper-slide">Ink Lingerie</div>
+          <div class="text swiper-slide">Some Text</div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="social-links">
+            <div class="instagram"><a href="#">Inst</a></div>
+            <div class="facebook"><a href="#">Fb</a></div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

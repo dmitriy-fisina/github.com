@@ -1,244 +1,48 @@
-@import "_vars";
-@import "_libs";
-@import "_fonts";
-@import "_global";
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
 
-.display-n {
-  display: none;
-}
-main {
-  height: 100vh;
-}
 header {
-  position: relative;
-  z-index: 10;
-  .wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    .burger {
-      position: absolute;
-      right: 0;
-      display: none;
-      transition: opacity 0.3s ease-in-out;
-      opacity: 1;
-      height: fit-content;
-      span + span {
-        margin-top: 7px;
-      }
-      span {
-        display: block;
-        width: 20px;
-        height: 1px;
-        background: rgba(40, 40, 40, 0.57);
-      }
-    }
-    .hide-opacity{
-      opacity: 0;
-    }
-    nav {
-      text-align: right;
-      ul {
-        li + li {
-          margin-top: 15px;
-        }
-        li {
-          position: relative;
-          &::after {
-            content: "";
-            width: 100%;
-            height: 1px;
-            opacity: 0;
-            transform: translateX(-100px);
-            position: absolute;
-            top: 20px;
-            left: 0;
-            background-color: black;
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-          }
-          &:hover {
-            &::after {
-              transform: translateX(0);
-              opacity: 1;
+    .wrapper {
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu {
+            ul {
+                li + li {
+                    margin-left: 15px;
+                }
+                li {
+                    display: inline-block;
+                    a {
+                        color: white;
+                        font-size: 16px;
+                    }
+                }
             }
-          }
-          a {
-            font-family: TT Travels;
-            font-weight: 300;
-            font-size: 11px;
-            letter-spacing: 0.02em;
-            text-transform: capitalize;
-            color: #000000;
-          }
         }
-      }
     }
-    .mobile-menu {
-      opacity: 0;
-      transform: translateX(100px);
-      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-    .show-mobile-menu {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 }
-.main-bg {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    .left {
-      width: 82px;
-      height: 97px;
-      background: url(../img/InkLingerie.svg) top no-repeat;
-      background-size: contain;
-    }
-    .right {
-      width: 91px;
-      height: 97px;
-      background: url(../img/InkLingerie2.svg) top no-repeat;
-      background-size: contain;
-    }
-  }
-}
-.drag-me {
-  position: absolute;
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  font-family: TT Travels;
-  font-size: 8px;
-  letter-spacing: 0.02em;
-  min-width: 40px;
-  text-transform: uppercase;
-  color: #000000;
-}
-.svg-bg {
-  width: 610px;
-  height: 728px;
-  max-width: 100vh;
+#video-bg {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -10;
+  right: 0;
+  bottom: 0;
+  left: 0;
   overflow: hidden;
-  .svg-animate {
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation: dash 2s linear;
-    animation-fill-mode: both;
-  }
-}
-.swiper-container {
-  width: 100%;
-}
-.slider {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -9;
-  .main-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 100vh;
-  }
-  .custom {
-    width: 476px;
-    height: 597px;
-    background: url(../img/image3.png) no-repeat;
-    transform: rotate(1.5deg);
-    background-size: contain;
-  }
-  .photo {
-    position: relative;
-  }
-  .ph2 {
-    width: 238px;
-    height: 331px;
-    margin-left: 23px;
-
-    background: url(../img/image2.png) no-repeat;
-    background-size: 215%;
-    background-position: -128px -47px;
-    transform: rotate(1.1deg) translate(-23px, -45px);
-  }
-  .ph1 {
-    width: 476px;
-    height: 631px;
-    background-size: cover;
-    background: url(../img/image1.png) no-repeat;
-    transform: rotate(1.5deg);
-    background-position: center;
-    background-size: cover;
-  }
-  .ph3 {
-    margin-right: -90px;
-    width: 345px;
-    height: 238px;
-    background-size: cover;
-    background: url(../img/image3.png) no-repeat;
-    transform: rotate(2.03deg) translate(-65px, 179px);
-    background-position: center;
-    background-size: cover;
-  }
-}
-.text-wrap {
-  position: absolute;
-  top: 39%;
-}
-.text {
-  font-family: Schnyder X Cond XL Demi;
-  font-size: 140px;
-  text-transform: uppercase;
-  color: #580300;
-  text-align: center;
-}
-.swiper-slide-prev {
-  opacity: 0 !important;
-}
-footer {
-  .social-links {
+  z-index: -1;
+  background-color: #000;
+  video {
     position: absolute;
-    bottom: 40px;
-    display: flex;
-    .instagram {
-      margin-right: 72px;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 32px;
-        top: 50%;
-        background: #393939;
-        opacity: 0.24;
-        width: 56px;
-        height: 1px;
-      }
-    }
-    a {
-      font-family: TT Travels;
-      font-size: 11px;
-      letter-spacing: 0.02em;
-      color: #000000;
-    }
+    top: 40px;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: -346px
   }
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@import "_media";
+@import "media";

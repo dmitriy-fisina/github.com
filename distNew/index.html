@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Осьминожка</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="bg-black"></div>
+  <div class="pop-up-form form">
+    <div class="form__wrapper">
+      <div class="title-wrapper">
+        <h2 class="section-title">Заголовок</h2>
+      </div>
+      <p class="sub-title">Давно выяснено, что при оценке дизайна и композиции читаемый текст</p>
+      <form>
+        <div class="form-body">
+          <div class="name">
+            <input type="text" name="name" id="name" placeholder="Меня зовут" required>
+          </div>
+          <div class="select">
+            <input type="text" name="select" id="select" placeholder="Я хочу" required disabled>
+          </div>
+          <div class="tel">
+            <input type="tel" name="phone" id="phone" placeholder="Мой телефон" required>
+          </div>
+        </div>
+        <div class="form-button-block">
+          <input class="form-button" type="submit" value="Отправить">
+        </div>
+      </form>
+      <div class="pop-up-close">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="logo"><img alt="Logo" class="logo-url"></a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Команда</a></li>
+            <li class="sub-menu"><a href="#" class="non-link">Услуги</a>
+              <div class="sub-menu-inner">
+                <div class="top">
+                  <ul>
+                    <li><a href="#">Лендинг</a></li>
+                    <li><a href="#">Корпоративный сайт</a></li>
+                    <li><a href="#">Интернет-магазин</a></li>
+                    <li><a href="#">Индивидуальные решения</a></li>
+                  </ul>
+                </div>
+                <div class="center">
+                  <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Реклама</a></li>
+                    <li><a href="#">SMM</a></li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <ul>
+                    <li><a href="#">Администрирование</a></li>
+                  </ul>
+                </div>
+                <div class="sub-menu__close">
+                  <span></span><span></span>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Портфолио</a></li>
+          </ul>
+        </nav>
+        <div class="header__link-phone">
+          <a href="#"><img alt="Instagram" class="instagram-icon"></a>
+          <a href="#"><img alt="Phone" class="header__phone"></a>
+        </div>
+        <button class="main-button pop-up-button">Консультация</button>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__wrapper">
+            <nav>
+              <ul>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Портфолио</a></li>
+              </ul>
+            </nav>
+            <div class="mobile-menu__contacts">
+              <div class="phone-numbers">
+                <p>8 800 555-77-78</p>
+                <p>8 800 555-77-78</p>
+              </div>
+              <div class="social-links">
+                <a href="#" class="mobile-menu__phone">
+                  <img src="./img//phoneBlack.png" alt="Phone">
+                </a>
+                <a href="#" class="mobile-menu__instagram">
+                  <img src="./img/instagramBlack.png" alt="Instagram">
+                </a>
+              </div>
+            </div>
+            <div class="button-block">
+              <button class="mobile-menu__button pop-up-button mobile-menu-button-pop-up">Консультация</button>
+            </div>
+          </div>
+          <div class="close-block">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="first-scren">
+    <div class="container">
+      <div class="first-scren__wrapper">
+        <h1 class="title1" data-aos="fade-right" data-aos-duration="1000">Лучшие</h1>
+        <h1 class="title2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">решения</h1>
+        <div class="button-block">
+          <p>Мы стараемся создать лучшие решения на рынке</p>
+          <div class="button-wrapper">
+            <button class="main-button">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="first-screen-video">
+    <video loop muted autoplay poster="./video/Busy-City.jpg">
+      <source src="./video/Busy-City.mp4" type="video/mp4">
+      <source src="./video/Busy-City.webm" type="video/webm">
+      Your browser doesn't support HTML5 video tag.
+    </video>
+  </div>
+  <section class="services">
+    <div class="services__wrapper">
+      <a href="#" class="block block1" data-aos="fade-up" data-aos-duration="1000">
+        <div class="background-block bg1">
+          <div class="img-block"></div>
+        </div>
+        <h3 class="block-title">Landing page</h3>
+        <div class="block-info">
+          <p class="price">10 000 <span>От Руб.</span></p>
+          <div class="links-wrapper">
+            <p class="analysis">Анализ стоимости</p>
+            <p class="details">Подробнее</p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="block block2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="background-block bg2">
+          <div class="img-block"></div>
+        </div>
+        <h3 class="block-title">Корпоративный <span>сайт</span></h3>
+        <div class="block-info">
+          <p class="price">10 000 <span>От Руб.</span></p>
+          <div class="links-wrapper">
+            <p class="analysis">Анализ стоимости</p>
+            <p class="details">Подробнее</p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="block block3" data-aos="fade-up">
+        <div class="background-block bg3">
+          <div class="img-block"></div>
+        </div>
+        <h3 class="block-title">Интернет <span>магазин</span></h3>
+        <div class="block-info">
+          <p class="price">10 000 <span>От Руб.</span></p>
+          <div class="links-wrapper">
+            <p class="analysis">Анализ стоимости</p>
+            <p class="details">Подробнее</p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="block block4" data-aos="fade-up">
+        <div class="background-block bg4">
+          <div class="img-block"></div>
+        </div>
+        <h3 class="block-title">Уникальный <span>продукт</span></h3>
+        <div class="block-info">
+          <p class="price">10 000 <span>От Руб.</span></p>
+          <div class="links-wrapper">
+            <p class="analysis">Анализ стоимости</p>
+            <p class="details">Подробнее</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="about-company">
+    <div class="container">
+      <div class="about-company__wrapper">
+        <h2 class="section-title" data-aos="fade-left">О компании</h2>
+        <p class="sub-title">Понимание потребностей онлайн-бизнеса, опыт взаимодействия с тысячами клиентов, высокая
+          квалификация персонала, собственные «ноу-хау» и хороший объём заказов</p>
+        <div class="block-wrapper about-company-slider">
+          <div class="block block1" data-aos="fade-right" data-aos-delay="500">
+            <p class="number">20</p>
+            <p class="text">Занимаемся разработкой сайтов с 1997 года</p>
+          </div>
+          <div class="block block2" data-aos="fade-right" data-aos-delay="250">
+            <p class="number">700</p>
+            <p class="text">Наши офисы находятся в разных городах и странах</p>
+          </div>
+          <div class="block block3" data-aos="fade-right">
+            <p class="number">120</p>
+            <p class="text">Высокая квалификация персонала</p>
+          </div>
+          <div class="block block4" data-aos="fade-left">
+            <p class="number">20</p>
+            <p class="text">Занимаемся разработкой сайтов с 1997 года</p>
+          </div>
+          <div class="block block5" data-aos="fade-left" data-aos-delay="250">
+            <p class="number">700</p>
+            <p class="text">Наши офисы находятся в разных городах и странах</p>
+          </div>
+          <div class="block block6" data-aos="fade-left" data-aos-delay="500">
+            <p class="number">120</p>
+            <p class="text">Высокая квалификация персонала</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="adventures">
+    <div class="container">
+      <div class="adventures__wrapper">
+        <h2 class="section-title">Преимущества</h2>
+        <div class="slider-wrapper adventures-slider">
+          <div class="slide-block">
+            <div class="slide-block__wrapper">
+              <div class="left-side">
+                <img src="./img/adventuresIcon1.png" alt="Icon" class="icon">
+              </div>
+              <div class="right-side">
+                <p class="title">Экономим время клиента</p>
+                <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                  сосредоточиться.
+                  Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                  также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+                  "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+                  редакторы
+                  HTML используют Lorem Ipsum в качестве текста по умолчанию,</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-block">
+            <div class="slide-block__wrapper">
+              <div class="left-side">
+                <img src="./img/adventuresIcon1.png" alt="Icon" class="icon">
+              </div>
+              <div class="right-side">
+                <p class="title">Экономим время клиента</p>
+                <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                  сосредоточиться.
+                  Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                  также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+                  "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+                  редакторы
+                  HTML используют Lorem Ipsum в качестве текста по умолчанию,</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-block">
+            <div class="slide-block__wrapper">
+              <div class="left-side">
+                <img src="./img/adventuresIcon1.png" alt="Icon" class="icon">
+              </div>
+              <div class="right-side">
+                <p class="title">Экономим время клиента</p>
+                <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                  сосредоточиться.
+                  Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                  также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+                  "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+                  редакторы
+                  HTML используют Lorem Ipsum в качестве текста по умолчанию,</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-block">
+            <div class="slide-block__wrapper">
+              <div class="left-side">
+                <img src="./img/adventuresIcon1.png" alt="Icon" class="icon">
+              </div>
+              <div class="right-side">
+                <p class="title">Экономим время клиента</p>
+                <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                  сосредоточиться.
+                  Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                  также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+                  "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+                  редакторы
+                  HTML используют Lorem Ipsum в качестве текста по умолчанию,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__wrapper">
+        <h2 class="section-title">Отзывы</h2>
+        <div class="slider-wrapper reviews-slider">
+          <a href="#" class="slide-block first-slide" data-aos="reviews-animation" data-aos-delay="500"
+             data-aos-duration="1500">
+            <div class="slide-block__wrapper">
+              <p class="title">Александр Иванов</p>
+              <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+                также</p>
+              <p class="show-more">Смотреть оригинал</p>
+            </div>
+          </a>
+          <a href="#" class="slide-block" data-aos="reviews-animation" data-aos-delay="250" 
+            data-aos-duration="1500">
+            <div class="slide-block__wrapper">
+              <img src="./img/reviewsSliderImg1.jpg" alt="Text">
+              <p class="show-more">Смотреть оригинал</p>
+            </div>
+          </a>
+          <a href="#" class="slide-block" data-aos="reviews-animation" data-aos-duration="1500">
+            <div class="slide-block__wrapper">
+              <img src="./img/reviewsSliderImg2.jpg" alt="Text">
+              <p class="show-more">Смотреть оригинал</p>
+            </div>
+          </a>
+          <a href="#" class="slide-block" data-aos="reviews-animation" data-aos-duration="1500">
+            <div class="slide-block__wrapper">
+              <img src="./img/reviewsSliderImg2.jpg " alt="Text">
+              <p class="show-more">Смотреть оригинал</p>
+            </div>
+          </a>
+        </div>
+        <div class="button-block">
+          <a href="#" class="write-review main-button">Оставить отзыв</a>
+          <a href="#" class="all-review main-button">Все отзывы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form">
+    <div class="container">
+      <div class="form__wrapper">
+        <div class="title-wrapper">
+          <h2 class="section-title" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">Вы все еще
+            здесь?</h2>
+        </div>
+        <p class="sub-title" data-aos="fade-in" data-aos-duration="1000">Тогда вам точно что то нужно!</p>
+        <form>
+          <div class="form-body">
+            <div class="name" data-aos="fade-left" data-aos-delay="500">
+              <input type="text" name="name" id="name" placeholder="Меня зовут" required>
+            </div>
+            <div class="select" data-aos="fade-left" data-aos-delay="250">
+              <input type="text" name="select" id="select" placeholder="Я хочу" required disabled>
+            </div>
+            <div class="tel" data-aos="fade-left">
+              <input type="tel" name="phone" id="phone" placeholder="Мой телефон" required>
+            </div>
+          </div>
+          <div class="form-button-block" data-aos="fade-in" data-aos-duration="2000" data-aos-offset="0">
+            <input class="form-button" type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="for-client">
+    <div class="container">
+      <h2 class="section-title">Для клиентов</h2>
+      <div class="for-client__wrapper">
+        <a href="#" class="block block1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+          <div class="top-content">
+            <img src="./img/forClientImg1.png" alt="Photo">
+          </div>
+          <div class="bottom-content">
+            <h3 class="title">Администрирование сайта</h3>
+            <p class="sub-title">Лучший выбор клиентов</p>
+            <p class="price"><span>От</span> 10 000 <span>Руб.</span></p>
+            <p class="main-button">Подробнее</p>
+          </div>
+        </a>
+        <a href="#" class="block block2" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+          <div class="top-content">
+            <img src="./img/forClientImg2.png" alt="Photo">
+          </div>
+          <div class="bottom-content">
+            <h3 class="title">Продвижение сайта</h3>
+            <p class="sub-title">Лучший выбор клиентов</p>
+            <p class="price"><span>От</span> 15 000 <span>Руб.</span></p>
+            <p class="main-button">Подробнее</p>
+          </div>
+        </a>
+        <a href="#" class="block block3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+          <div class="top-content">
+            <img src="./img/forClientImg3.png" alt="Photo">
+          </div>
+          <div class="bottom-content">
+            <h3 class="title">SMM</h3>
+            <p class="sub-title">Лучший выбор клиентов</p>
+            <p class="price"><span>От</span> 30 000 <span>Руб.</span></p>
+            <p class="main-button">Подробнее</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="title-wrapper">
+      <h2 class="section-title" data-aos="fade-left">Портфолио</h2>
+    </div>
+    <div class="portfolio__wrapper portfolio-slider">
+      <div class="block block1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+        <div class="top-content">
+          <img src="./img/porfolioImg1.jpg" alt="Photo">
+        </div>
+        <div class="bottom-content">
+          <p class="title">Сайт для компании Лев</p>
+          <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+            Lorem Ipsum используют потому</p>
+          <div class="button-block">
+            <a href="#" class=" main-button">Подробнее</a>
+            <a href="#" class="link-company">На сайт компании</a>
+          </div>
+        </div>
+      </div>
+      <div class="block block2" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+        <div class="top-content">
+          <img src="./img/porfolioImg2.jpg" alt="Photo">
+        </div>
+        <div class="bottom-content">
+          <p class="title">Сайт для компании Лев</p>
+          <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+            Lorem Ipsum используют потому</p>
+          <div class="button-block">
+            <a href="#" class=" main-button">Подробнее</a>
+            <a href="#" class="link-company">На сайт компании</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-block-bottom">
+      <a href="#" class="more-works main-button">Больше работ</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="top-content">
+          <a href="#" class="logo"><img src="./img/logoFooter.png" alt="Logo"></a>
+          <div class="menu-block">
+            <div class="company">
+              <a href="#" class="title">Компания</a>
+              <nav>
+                <ul>
+                  <li><a href="#">Об Осьминожке</a></li>
+                  <li><a href="#">Наша команда</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="development">
+              <a href="#" class="title">Разработка сайтов</a>
+              <nav>
+                <ul>
+                  <li><a href="#">Лендинг</a></li>
+                  <li><a href="#">Корпоративный сайт</a></li>
+                  <li><a href="#">Интернет-магазин</a></li>
+                  <li><a href="#">Индивидуальный продукт </a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="clients">
+              <a href="#" class="title">Клиентам</a>
+              <nav>
+                <ul>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Портфолио</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="contacts">
+            <div class="social-links">
+              <a href="#" class="instagram"><img src="./img/instagramColor.png" alt="Instagram"></a>
+              <a href="#" class="phone"><img src="./img/phoneWhite.png" alt="Phone"></a>
+            </div>
+            <div class="phone-numbers">
+              <p>8 800 555-77-78</p>
+              <p>8 800 555-77-78</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p class="copyright">Copyright © 1998-2020 Digital Агентство Осьминожка. All rights reserved.</p>
+          <a href="#" class="security">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

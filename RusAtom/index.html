@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>РусАтом</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="black-out"></div>
+  <div class="pop-up-form template-form">
+    <div class="container">
+      <div class="form-call-back__wrapper">
+        <div class="form-call-back__bg">
+          <h2 class="main-title">Заказть обратный звонок</h2>
+          <form>
+            <div class="form-header">
+              <p>Отправьте завку и мы свяжемся с Вами</p>
+            </div>
+            <div class="form-body">
+              <input type="text" name="Name" placeholder="Ваше имя">
+              <input type="tel" name="Phone" id="mask-tel" placeholder="+7 (___)-___-__-__">
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Заказать звонок">
+              <label class="custom-checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих
+                персональных данных, в соответствии с Федеральным законом от 27.07.2006 года
+                №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку
+                персональных данных
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="logo"><img src="./img/logo.svg" alt="Logo"></a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#services">О сервисе</a></li>
+            <li><a href="#function">Решения</a></li>
+            <li><a href="#aboutUs">Компания</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="phone-number pop-up-button">
+          <p class="number">+7 495 123 45 67</p>
+          <button class="call-back">Заказать обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="left-content">
+          <h1 id="animate-typing"></h1>
+          <p>Платформа предназначена для технического обслуживания и управления оборудованием, включая создание отчетов
+            из любого места в любое время</p>
+          <button class="gradient-button-border pop-up-button">Получить консультацию</button>
+        </div>
+        <div class="right-content" data-aos="fade-in" data-aos-duration="1500">
+          <img src="./img/bannerImg.png" alt="Picture">
+        </div>
+        <div class="right-text">
+          <p class="text">РЕШЕНИЯ ДЛЯ мед. учереждений всего региона</p>
+          <img src="./img/Arrow.svg" alt="Arrow">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="support">
+    <div class="container">
+      <div class="support__wrapper">
+        <h2 class="title main-title">При поддержке</h2>
+        <div class="block-wrapper">
+          <div class="block" data-aos="fade-in" data-aos-duration="1500">
+            <img src="./img/supportImg1.png" alt="Logo">
+            <p class="text text1">Федеральное медико-биологическое агентство</p>
+          </div>
+          <div class="block" data-aos="fade-in" data-aos-duration="1500">
+            <img src="./img/supportImg2.png" alt="Logo">
+            <p class="text text2">Комитет государственной думы по охране здоровья</p>
+          </div>
+          <div class="block" data-aos="fade-in" data-aos-duration="1500">
+            <img src="./img/supportImg3.png" alt="Logo">
+            <p class="text text3">Экспертный совет по здравоохранению Комитета Совета Федерации по социальной политике
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-services" id="services">
+    <div class="container">
+      <div class="about-services__wrapper">
+        <div class="left-content">
+          <a href="#" class="video">
+            <h2 class="video-title">Смотреть видео
+              о сервисе</h2>
+            <div class="play"></div>
+            <p class="video-time">90 секунд </p>
+          </a>
+        </div>
+        <div class="right-content">
+          <h2 class="main-title">О сервисе</h2>
+          <p class="text">Наше решение помогает автоматизировать
+            процесс обслуживания оборудования на всех этапах.
+            Теперь ремонтировать, подавать заявки
+            и следить за работой любого оборудования
+            стало просто и понятно.</p>
+          <ul class="list">
+            <li data-aos="fade-in" data-aos-duration="1500">Управление оборудованием и инфраструктурой</li>
+            <li data-aos="fade-in" data-aos-duration="1500" data-aos-delay="250">Управление работами</li>
+            <li data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">Аналитика и планирование</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="management">
+    <div class="container">
+      <div class="management__wrapper">
+        <h2 class="main-title">Управление обслуживанием
+          медицинского оборудования</h2>
+        <p class="text">Для эффективного управления и обслуживания всех систем визуализации, программного обеспечения,
+          оборудования необходима единая точка доступа. Наш медицинский сервисный информационный портал упрощает процесс
+          получения иформации о фунционировании медицинского оборудования вашей организации.
+
+          <span>Вы можете быстро определить статус оборудования — работает, сломано, в ремонте или законсервировано.
+            Также
+            легко найдете относящийся к нему договор, а на карте учреждения с легкостью определите местоположение нужной
+            единицы оборудования.</span>
+
+          <span>Портал также позволяет без труда вводить новые заявки на ремонт или техническое обслуживание
+            оборудования.
+            Нажатием одной кнопки отслеживаются данные по текущим и исполненным сервисным работам, не прерывая рабочего
+            процесса. Вы сможете просматривать отчеты, детали договоров в удобное для вас время — круглосуточно и в
+            любой
+            день недели.</span> </p>
+      </div>
+    </div>
+  </section>
+  <section class="for-whom">
+    <div class="container">
+      <div class="for-whom__wrapper">
+        <h2 class="main-title">Для кого создан портал</h2>
+        <div class="block-wrapper">
+          <div class="block" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+            <img src="./img/forWhomIcon1.svg" alt="Icon">
+            <p class="block-title">Государственные медицинские организации</p>
+          </div>
+          <div class="block" data-aos="fade-right" data-aos-duration="1500"data-aos-delay="400">
+            <img src="./img/forWhomIcon2.svg" alt="Icon">
+            <p class="block-title">Частные медицинские организации</p>
+          </div>
+          <div class="block" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+            <img src="./img/forWhomIcon3.svg" alt="Icon">
+            <p class="block-title">Медицинские сервисные организации</p>
+          </div>
+          <div class="block" data-aos="fade-right" data-aos-duration="1500">
+            <img src="./img/forWhomIcon4.svg" alt="Icon">
+            <p class="block-title">Поставщики медицинского оборудования</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form-call-back template-form">
+    <div class="container">
+      <div class="form-call-back__wrapper">
+        <div class="form-call-back__bg">
+          <h2 class="main-title">Свяжитесь с нами
+            для получения доступа к порталу</h2>
+          <form>
+            <div class="form-header">
+              <p>Отправьте завку и мы свяжемся с Вами</p>
+            </div>
+            <div class="form-body">
+              <input type="text" name="Name" placeholder="Ваше имя">
+              <input type="tel" name="Phone" id="mask-tel" placeholder="+7 (___)-___-__-__">
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Заказать звонок">
+              <label class="custom-checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих
+                персональных данных, в соответствии с Федеральным законом от 27.07.2006 года
+                №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку
+                персональных данных
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portal-function" id="function">
+    <div class="container">
+      <div class="portal-function__wrapper">
+        <h2 class="main-title">Функции портала</h2>
+        <div class="block-wrapper">
+          <div class="block">
+            <p class="block-title">УПРАВЛЕНИЕ ОБОРУДОВАНИЕМ И ИНФРАСТРУКТУРОЙ</p>
+            <span class="line"></span>
+            <ul class="list">
+              <li>Ведение списка оборудования</li>
+              <li>Учет паспортных данных оборудования</li>
+              <li>Ведение регламентов по каждой единице оборудования</li>
+              <li>Учет перемещения оборудования</li>
+              <li>Инвентаризация и маркировка</li>
+              <li>Отслеживание текущего состояния оборудования</li>
+            </ul>
+            <a class="card-button pop-up-button" href="#">Подробнее</a>
+          </div>
+          <div class="block">
+            <p class="block-title">УПРАВЛЕНИЕ РАБОТАМИ</p>
+            <span class="line"></span>
+            <ul class="list">
+              <li>Создание заявок на проведение технического обслуживания и ремонтов</li>
+              <li>Контроль заявок на техническое обслуживание и ремонт оборудования</li>
+              <li>Учет выполненных работ и затраченных на ремонт денежных средств</li>
+            </ul>
+            <a class="card-button pop-up-button" href="#">Подробнее</a>
+          </div>
+          <div class="block">
+            <p class="block-title">АНАЛИТИКА И ПЛАНИРОВАНИЕ</p>
+            <span class="line"></span>
+            <ul class="list">
+              <li>Динамика создания и выполнения заявок на техническое обслуживание и ремонт оборудования</li>
+              <li>Статистика по заявкам и заказ–нарядам</li>
+              <li>Статистика по времени исполнения заявки/заказ–наряда по инженерам и/или подрядным организациям</li>
+              <li>Диаграмма созданных (принятых в работу) / закрытых заявок</li>
+              <li>Диаграмма состояния оборудования</li>
+              <li>Анализ загрузки оборудования</li>
+            </ul>
+            <a class="card-button pop-up-button" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="support-in-russia">
+    <div class="container">
+      <div class="support-in-russia__wrapper">
+        <h2 class="main-title">Поддержка в любой точке России</h2>
+        <p class="sub-title">Уже 78 заведенных в систему организаций из 21 региона России</p>
+        <div class="content-wrapper">
+          <div class="left-content">
+            <p class="content-title">Объединяем ПО</p>
+            <div class="item-wrapper">
+              <p class="abbr">РИС</p>
+              <p class="abbr-init">Радиологическая информационная система</p>
+            </div>
+            <div class="item-wrapper">
+              <p class="abbr">МИС</p>
+              <p class="abbr-init">Медицинская информационная система</p>
+            </div>
+            <img src="./img/atoirLogo.svg" alt="Logo Atoir" class="atoir-logo">
+          </div>
+          <div class="right-content">
+            <img src="./img/supportInRussiaMap.png" alt="Picture">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages-portal">
+    <div class="container">
+      <div class="advantages-portal__wrapper">
+        <h2 class="main-title">Преимущества использования портала</h2>
+        <div class="block-wrapper">
+          <div class="block" data-aos="fade-up" data-aos-duration="1500">
+            <img src="./img/advantagesIcon1.svg" alt="Icon" class="icon">
+            <p class="block-title">Автоматизация бизнес-процессов, касающихся учета, ремонта и ТО оборудования:</p>
+            <p class="description">Виден статус каждой заявки. Всегда можно связаться с исполнителем.
+              Контроль состояния оборудования. Приоритезация заявок на ремонт, что особенно важно в условиях
+              лимитированного финансирования.
+            </p>
+          </div>
+          <div class="block" data-aos="fade-up" data-aos-duration="1500">
+            <img src="./img/advantagesIcon2.svg" alt="" class="icon">
+            <p class="block-title">Оптимизация рабочего времени сотрудников и сокращение времени на коммуникации:</p>
+            <p class="description">Система АТОИР помогает моментально доставить заявку на ТО и/или ремонт оборудования
+              исполнителю.
+            </p>
+          </div>
+          <div class="block" data-aos="fade-up" data-aos-duration="1500">
+            <img src="./img/advantagesIcon3.svg" alt="" class="icon">
+            <p class="block-title">Снижение расходов на техническое обслуживание и ремонт оборудования:
+            </p>
+            <p class="description">Снижение расходов за счет ведения истории ремонтов и ТО на каждое оборудование и
+              создания корректного регламента ТО.
+              Анализ текущих расходов на ТО и ремонт помогает выбрать оптимальную стратегию обслуживания оборудования.
+              Сокращение простоев оборудования также снижает имеющиеся расходы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="how-it-work">
+    <div class="container">
+      <div class="how-it-work__wrapper">
+        <div class="left-content">
+          <img src="./img/picturePhone.png" alt="Picture">
+        </div>
+        <div class="right-content">
+          <h2 class="main-title">Как это работает</h2>
+          <div class="block-wrapper">
+            <div class="row row1">
+              <div class="block">
+                <p class="block-title">Оборудование
+                  сломалось</p>
+              </div>
+            </div>
+            <div class="row row2">
+              <div class="block">
+                <p class="block-title">Создаете заявку
+                  на ремонт</p>
+              </div>
+              <div class="block">
+                <p class="block-title">Заявка передана
+                  инженеру</p>
+              </div>
+              <div class="block">
+                <p class="block-title">Заявка в работе</p>
+              </div>
+              <div class="block">
+                <p class="block-title">Заявка
+                  выполнена</p>
+              </div>
+            </div>
+            <div class="row row3">
+              <div class="block">
+                <p class="block-title">Оборудование
+                  работает</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-partners">
+    <div class="container">
+      <div class="our-partners__wrapper">
+        <h2 class="main-title">Наши партнеры</h2>
+        <div class="slick-wrapper our-partners-slick">
+          <div class="block"><img src="./img/partnersLogo1.png" alt="Logo" class="partners-logo"></div>
+          <div class="block"><img src="./img/partnersLogo2.png" alt="Logo" class="partners-logo"></div>
+          <div class="block"><img src="./img/partnersLogo3.png" alt="Logo" class="partners-logo"></div>
+          <div class="block"><img src="./img/partnersLogo4.png" alt="Logo" class="partners-logo"></div>
+          <div class="block"><img src="./img/partnersLogo4.png" alt="Logo" class="partners-logo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-us" id="aboutUs">
+    <div class="container">
+      <div class="about-us__wrapper">
+        <div class="left-content">
+          <div class="slick-wrapper about-us-slick">
+            <div class="block"><img src="./img/aboutUsCertificate1.png" alt="Certificate"></div>
+            <div class="block"><img src="./img/aboutUsCertificate2.png" alt="Certificate"></div>
+            <div class="block"><img src="./img/aboutUsCertificate3.png" alt="Certificate"></div>
+            <div class="block"><img src="./img/aboutUsCertificate3.png" alt="Certificate"></div>
+          </div>
+          <p class="title">Лицензии
+            и сертификаты</p>
+        </div>
+        <div class="right-content">
+          <h2 class="main-title">О нас</h2>
+          <p class="description">Федеральная программа личной поддержки и безопасности. В любое время дня и ночи Вы
+            получите защиту в опасной ситуации и помощь юристов, адвокатов и менеджеров контакт-центра.
+
+            <span>Удобное мобильное приложение автоматически определяет координаты при отправке сигнала экстренной
+              помощи и
+              направляет ближайший экипаж реагирования от одного из 150 охранных предприятий по всей России.</span>
+
+            <span>В любой ситуации Вы сможете быть уверенными в профессиональном подходе к решению проблем. Многолетний
+              опыт
+              работы с самыми требовательными корпоративными заказчиками на всей территории России гарантирует
+              профессионализм и компетентность нашей работы.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form-call-back template-form form-call-back2">
+    <div class="container">
+      <div class="form-call-back__wrapper">
+        <div class="form-call-back__bg">
+          <h2 class="main-title">Остались вопросы?</h2>
+          <form>
+            <div class="form-header">
+              <p>Отправьте завку и мы свяжемся с Вами</p>
+            </div>
+            <div class="form-body">
+              <input type="text" name="Name" placeholder="Ваше имя">
+              <input type="tel" name="Phone" id="mask-tel2" placeholder="+7 (___)-___-__-__">
+            </div>
+            <div class="form-footer">
+              <input type="submit" value="Заказать звонок">
+              <label class="custom-checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих
+                персональных данных, в соответствии с Федеральным законом от 27.07.2006 года
+                №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку
+                персональных данных
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container">
+      <div class="news__wrapper">
+        <h2 class="main-title">Новости</h2>
+        <div class="slick-wrapper news-slick">
+          <div class="block">
+            <p class="title">10 октября 2019 года была подписана Дорожная Карта между Росатомом и ФМБА</p>
+            <p class="description">А можно сделать все эти платежи на странице онлайн-банка, создав шаблоны платежей или
+              используя уже готовые шаблоны</p>
+            <a href="./news.html" class="read-more">Читать подробнее</a><span class="date">27.03.2019</span>
+          </div>
+          <div class="block">
+            <p class="title">10 октября 2019 года была подписана Дорожная Карта между Росатомом и ФМБА</p>
+            <p class="description">А можно сделать все эти платежи на странице онлайн-банка, создав шаблоны платежей или
+              используя уже готовые шаблоны</p>
+            <a href="./news.html" class="read-more">Читать подробнее</a><span class="date">27.03.2019</span>
+          </div>
+          <div class="block">
+            <p class="title">10 октября 2019 года была подписана Дорожная Карта между Росатомом и ФМБА</p>
+            <p class="description">А можно сделать все эти платежи на странице онлайн-банка, создав шаблоны платежей или
+              используя уже готовые шаблоны</p>
+            <a href="./news.html" class="read-more">Читать подробнее</a><span class="date">27.03.2019</span>
+          </div>
+          <div class="block">
+            <p class="title">10 октября 2019 года была подписана Дорожная Карта между Росатомом и ФМБА</p>
+            <p class="description">А можно сделать все эти платежи на странице онлайн-банка, создав шаблоны платежей или
+              используя уже готовые шаблоны</p>
+            <a href="./news.html" class="read-more">Читать подробнее</a><span class="date">27.03.2019</span>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__wrapper">
+        <div class="left-content">
+          <div id="map"></div>
+        </div>
+        <div class="right-content">
+          <h2 class="main-title">Контакты</h2>
+          <div class="contact-block address">
+            <p class="title">Адрес офиса</p>
+            <p class="description">Москва, Нахимовский проспект, 58</p>
+          </div>
+          <div class="contact-block phone">
+            <p class="title">Телефон</p>
+            <p class="description">+7 (495) 995 76 80</p>
+          </div>
+          <div class="contact-block email">
+            <p class="title">e-mail</p>
+            <p class="description">info@rusams.ru</p>
+          </div>
+          <p class="bottom-text">Федеральная программа личной поддержки и безопасности. В любое время дня и ночи Вы
+            получите защиту в опасной ситуации и помощь юристов, адвокатов и менеджеров контакт-центра.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a class="logo" href="#"><img src="./img/logoWhite.svg" alt="Logo"></a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#services">О сервисе</a></li>
+            <li><a href="#function">Решения</a></li>
+            <li><a href="#aboutUs">Компания</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="download">
+          <a href="#" class="app-store"><img src="./img/appStoreButton.svg" alt="App store"></a>
+          <a href="#" class="google-play"><img src="./img/googlePlayButton.svg" alt="Google play"></a>
+        </div>
+        <div class="call-back-copyright">
+          <button class="call-back pop-up-button">Заказать обратный звонок</button>
+          <p class="copyright">© «РМС» - Сервисная медицинская компания
+            Все права защищены</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvXYwHa3n6IenqiV9ERXd65Ziixw6HhkI&callback=initMap&language=ru&region=RU"
+    async defer></script>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 55.742649, lng: 37.587336 },
+        zoom: 17,
+        disableDefaultUI: true
+      }),
+        marker = new google.maps.Marker({
+          position: { lat: 55.742649, lng: 37.587336 },
+          map: map
+        });
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

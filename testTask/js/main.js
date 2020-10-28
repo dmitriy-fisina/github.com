@@ -11,6 +11,28 @@ $(function () {
         slidesToShow: 4,
         nextArrow: '<button class="slick-arrow slick-next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49 23" enable-background="new 0 0 49 23" xml:space="preserve"> <g> <g> <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M48.8,11.1l-11-10.9c-0.2-0.2-0.6-0.2-0.8,0 c-0.2,0.2-0.2,0.6,0,0.8l10,10H0.8c-0.3,0-0.6,0.2-0.6,0.6v0c0,0.3,0.2,0.6,0.6,0.6h46.3l-10,10c-0.2,0.2-0.2,0.6,0,0.8 c0.2,0.2,0.6,0.2,0.8,0l11-10.9C49,11.7,49,11.3,48.8,11.1z"/> </g> </g> </svg></button>',
         prevArrow: '<button class="slick-arrow slick-prev"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49 23" enable-background="new 0 0 49 23" xml:space="preserve"> <g> <g> <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M48.8,11.1l-11-10.9c-0.2-0.2-0.6-0.2-0.8,0 c-0.2,0.2-0.2,0.6,0,0.8l10,10H0.8c-0.3,0-0.6,0.2-0.6,0.6v0c0,0.3,0.2,0.6,0.6,0.6h46.3l-10,10c-0.2,0.2-0.2,0.6,0,0.8 c0.2,0.2,0.6,0.2,0.8,0l11-10.9C49,11.7,49,11.3,48.8,11.1z"/> </g> </g> </svg></button>',
+        responsive: [
+            {
+                breakpoint: 1249,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 961,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 759,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    centerMode: true
+                }
+            }
+        ]
     }).magnificPopup({
         type: 'image',
         delegate: '.slick-slide a',
@@ -91,5 +113,17 @@ $(function () {
         $(".header").find(".location .title").text($(this).text());
         $(".pop-up-select-city").fadeOut(200);
         $(".black-out-pop-up-select-city").fadeOut(200);
+    });
+    if($(window).width() < 961) {
+        let headerHeight = $(".header").height() - 1,
+            headerPaddingTop = $(".header").css("padding-top").replace(/px/gi, "");
+        $(".header-burger-menu").css("top", `${headerHeight + +headerPaddingTop}px`);
+    }
+    $(window).on("resize", function () {
+        if($(window).width() < 961) {
+            let headerHeight = $(".header").height() - 1,
+                headerPaddingTop = $(".header").css("padding-top").replace(/px/gi, "");
+            $(".header-burger-menu").css("top", `${headerHeight + +headerPaddingTop}px`);
+        } 
     });
 });

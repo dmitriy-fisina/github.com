@@ -1,9 +1,26 @@
 $(function () {
 
     $(".our-works").find(".select-view").children().on("click", function (e) {
-        if (!$(e.currentTarget).hasClass("select-view__item-active")) {
+        if (!$(e.currentTarget).hasClass("select-view__item-active") && $(e.currentTarget).hasClass("select-view__item-haircut")) {
             $(".our-works").find(".select-view").children().removeClass("select-view__item-active");
             $(e.currentTarget).addClass("select-view__item-active");
+            $(".our-works").find(".slider-wrapper").addClass("our-works-slider-wrapper-hidden")
+            $(".our-works").find(".slider-wrapper-haircut").removeClass("our-works-slider-wrapper-hidden");
+            $(".our-works").find(".slider-wrapper").slick('refresh');
+        }
+        else if (!$(e.currentTarget).hasClass("select-view__item-active") && $(e.currentTarget).hasClass("select-view__item-beard-styling")) {
+            $(".our-works").find(".select-view").children().removeClass("select-view__item-active");
+            $(e.currentTarget).addClass("select-view__item-active");
+            $(".our-works").find(".slider-wrapper").addClass("our-works-slider-wrapper-hidden")
+            $(".our-works").find(".slider-wrapper-beard-styling").removeClass("our-works-slider-wrapper-hidden");
+            $(".our-works").find(".slider-wrapper").slick('refresh');
+        }
+        else if (!$(e.currentTarget).hasClass("select-view__item-active") && $(e.currentTarget).hasClass("select-view__item-complex")) {
+            $(".our-works").find(".select-view").children().removeClass("select-view__item-active");
+            $(e.currentTarget).addClass("select-view__item-active");
+            $(".our-works").find(".slider-wrapper").addClass("our-works-slider-wrapper-hidden")
+            $(".our-works").find(".slider-wrapper-complex").removeClass("our-works-slider-wrapper-hidden");
+            $(".our-works").find(".slider-wrapper").slick('refresh');
         }
     });
     var $carousel = $(".our-works").find(".slider-wrapper");
@@ -103,7 +120,7 @@ $(function () {
     $(".header").find(".location").on("click", function () {
         $(".pop-up-select-city").fadeIn(200);
         $(".black-out-pop-up-select-city").fadeIn(200);
-       
+
     });
     $(".close-pop-up-select-city").on("click", function () {
         $(".pop-up-select-city").fadeOut(200);
@@ -114,16 +131,18 @@ $(function () {
         $(".pop-up-select-city").fadeOut(200);
         $(".black-out-pop-up-select-city").fadeOut(200);
     });
-    if($(window).width() < 961) {
+    if ($(window).width() < 961) {
         let headerHeight = $(".header").height() - 1,
             headerPaddingTop = $(".header").css("padding-top").replace(/px/gi, "");
         $(".header-burger-menu").css("top", `${headerHeight + +headerPaddingTop}px`);
     }
     $(window).on("resize", function () {
-        if($(window).width() < 961) {
+        if ($(window).width() < 961) {
             let headerHeight = $(".header").height() - 1,
                 headerPaddingTop = $(".header").css("padding-top").replace(/px/gi, "");
             $(".header-burger-menu").css("top", `${headerHeight + +headerPaddingTop}px`);
-        } 
+        }
     });
+    // let heightPopUpServices
+    // $(".pop-up-our-services").find(".services-item-right-side").css("margin-top", )
 });

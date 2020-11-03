@@ -13,6 +13,16 @@
 
   <div class="black-out-pop-up-our-services"></div>
   <div class="black-out-pop-up-select-city"></div>
+  <div class="button-up">
+    <div class="container-main">
+      <div class="button-up__wrapper">
+        <button>
+          <img src="./img/buttonUpIcon.svg" alt="Icon">
+          <span>наверх</span>
+        </button>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="container-header">
       <div class="header__wrapper">
@@ -195,8 +205,7 @@ v-3.8c0-4.4,2.7-6.8,6.7-6.8l4,0V10.1z" />
           для настоящих мужчин</h2>
         <a href="#" class="sign-up template-sign-up-online">Записаться онлайн</a>
         <div class="razor">
-          <div class="razor-part1"><img src="./img/razorPart1.png" alt="Image"></div>
-          <div class="razor-part2"><img src="./img/razorPart2.png" alt="Image"></div>
+          <img src="./img/razor.png" alt="Image">
         </div>
       </div>
     </div>
@@ -441,27 +450,59 @@ v-3.8c0-4.4,2.7-6.8,6.7-6.8l4,0V10.1z" />
       <div class="our-works__wrapper">
         <div class="title-block">
           <div class="select-view">
-            <div class="select-view__item select-view__item-haircut select-view__item-active">Стрижка </div>
-            <div class="select-view__item select-view__item-beard-styling">Оформление бороды</div>
-            <div class="select-view__item select-view__item-complex">комплекс</div>
+            <div class="select-view__item select-view__item-active" index="0">Стрижка </div>
+            <div class="select-view__item" index="1">Оформление бороды</div>
+            <div class="select-view__item" index="2">комплекс</div>
+            <div class="select-view__item" index="3">Укладка</div>
+            <div class="select-view__item" index="4">Окрашевание волос</div>
+            <div class="select-view__item" index="5">Бритье головы</div>
+            <div class="select-view__item" index="6">Тонирование бороды</div>
           </div>
           <h2 class="section-title">наши работы</h2>
         </div>
-        <div class="slider-wrapper slider-wrapper-haircut">
+        <div class="slider-wrapper" index="0">
           <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg1.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
         </div>
-        <div class="slider-wrapper slider-wrapper-beard-styling our-works-slider-wrapper-hidden">
+        <div class="slider-wrapper our-works-slider-wrapper-hidden" index="1">
           <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
         </div>
-        <div class="slider-wrapper slider-wrapper-complex our-works-slider-wrapper-hidden">
+        <div class="slider-wrapper our-works-slider-wrapper-hidden" index="2">
+          <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg1.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+        </div>
+        <div class="slider-wrapper our-works-slider-wrapper-hidden" index="3">
+          <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg1.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+        </div>
+        <div class="slider-wrapper our-works-slider-wrapper-hidden" index="4">
+          <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg1.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+        </div>
+        <div class="slider-wrapper our-works-slider-wrapper-hidden" index="5">
+          <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg1.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+          <a href="./img/ourWorksImg4.jpg" class="slider-item"><img src="./img/ourWorksImg4.jpg" alt="Image"></a>
+        </div>
+        <div class="slider-wrapper our-works-slider-wrapper-hidden" index="6">
           <a href="./img/ourWorksImg1.jpg" class="slider-item"><img src="./img/ourWorksImg2.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg2.jpg" class="slider-item"><img src="./img/ourWorksImg1.jpg" alt="Image"></a>
           <a href="./img/ourWorksImg3.jpg" class="slider-item"><img src="./img/ourWorksImg3.jpg" alt="Image"></a>
@@ -587,7 +628,7 @@ v-3.8c0-4.4,2.7-6.8,6.7-6.8l4,0V10.1z" />
             </ul>
           </nav>
         </div>
-        <a href="#" class="logo"><img src="./img/logo.png" alt="Logo"></a>
+        <a href="#" class="logo"><img src="./img/logo.svg" alt="Logo"></a>
         <div class="footer__right-side">
           <div class="social-links">
             <a href="#" class="social-links__item">
@@ -644,7 +685,7 @@ v-3.8c0-4.4,2.7-6.8,6.7-6.8l4,0V10.1z" />
     </div>
   </footer>
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvXYwHa3n6IenqiV9ERXd65Ziixw6HhkI&callback=initMap&language=ru&region=RU"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVJ2shdZI8Rucg-pojGK9OPEXIiqO1gpE&callback=initMap&language=ru&region=RU"
     async defer></script>
   <script>
     var map;
@@ -652,7 +693,7 @@ v-3.8c0-4.4,2.7-6.8,6.7-6.8l4,0V10.1z" />
       map = new google.maps.Map(document.querySelector('.map'), {
         center: { lat: 55.742649, lng: 37.587336 },
         zoom: 17,
-        disableDefaultUI: true
+        disableDefaultUI: true,
       }),
         marker = new google.maps.Marker({
           position: { lat: 55.742649, lng: 37.587336 },

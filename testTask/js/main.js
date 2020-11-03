@@ -1,26 +1,18 @@
 $(function () {
 
     $(".our-works").find(".select-view").children().on("click", function (e) {
-        if (!$(e.currentTarget).hasClass("select-view__item-active") && $(e.currentTarget).hasClass("select-view__item-haircut")) {
+        let currentTarget = $(e.currentTarget),
+            targetIndex = $(e.currentTarget).attr("index"),
+            gallerySlider = $(".our-works").find(".slider-wrapper"),
+            targetIndexGallery = $(".our-works").find(`.slider-wrapper[index='${targetIndex}']`);
+
+            
+        if (!currentTarget.hasClass("select-view__item-active")) {
             $(".our-works").find(".select-view").children().removeClass("select-view__item-active");
-            $(e.currentTarget).addClass("select-view__item-active");
-            $(".our-works").find(".slider-wrapper").addClass("our-works-slider-wrapper-hidden")
-            $(".our-works").find(".slider-wrapper-haircut").removeClass("our-works-slider-wrapper-hidden");
-            $(".our-works").find(".slider-wrapper").slick('refresh');
-        }
-        else if (!$(e.currentTarget).hasClass("select-view__item-active") && $(e.currentTarget).hasClass("select-view__item-beard-styling")) {
-            $(".our-works").find(".select-view").children().removeClass("select-view__item-active");
-            $(e.currentTarget).addClass("select-view__item-active");
-            $(".our-works").find(".slider-wrapper").addClass("our-works-slider-wrapper-hidden")
-            $(".our-works").find(".slider-wrapper-beard-styling").removeClass("our-works-slider-wrapper-hidden");
-            $(".our-works").find(".slider-wrapper").slick('refresh');
-        }
-        else if (!$(e.currentTarget).hasClass("select-view__item-active") && $(e.currentTarget).hasClass("select-view__item-complex")) {
-            $(".our-works").find(".select-view").children().removeClass("select-view__item-active");
-            $(e.currentTarget).addClass("select-view__item-active");
-            $(".our-works").find(".slider-wrapper").addClass("our-works-slider-wrapper-hidden")
-            $(".our-works").find(".slider-wrapper-complex").removeClass("our-works-slider-wrapper-hidden");
-            $(".our-works").find(".slider-wrapper").slick('refresh');
+            currentTarget.addClass("select-view__item-active");
+            gallerySlider.addClass("our-works-slider-wrapper-hidden");
+            targetIndexGallery.attr("index", targetIndex).removeClass("our-works-slider-wrapper-hidden");
+            gallerySlider.slick('refresh');
         }
     });
     var $carousel = $(".our-works").find(".slider-wrapper");
@@ -143,6 +135,21 @@ $(function () {
             $(".header-burger-menu").css("top", `${headerHeight + +headerPaddingTop}px`);
         }
     });
-    // let heightPopUpServices
-    // $(".pop-up-our-services").find(".services-item-right-side").css("margin-top", )
+    $(window).on("scroll", function () {
+        if($(window).scrollTop() >= 200) {
+            $(".button-up").fadeIn(200);
+        } else if ($(window).scrollTop() < 200) {
+            $(".button-up").fadeOut(200);
+        }
+    });
+    if($(window).scrollTop() >= 200) {
+        $(".button-up").fadeIn(200);
+    } else if ($(window).scrollTop() < 200) {
+        $(".button-up").fadeOut(200);
+    }
+    $(".button-up").find("button").on("click", function () {
+        $("html, body").stop().animate({
+            scrollTop: 0
+        }, 500);
+    })
 });

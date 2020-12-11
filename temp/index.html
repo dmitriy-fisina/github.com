@@ -15,14 +15,22 @@
     <div class="header__top">
       <div class="container">
         <div class="header__top__wrapper">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <nav class="menu">
             <ul>
               <li><a href="#">О компании </a></li>
               <li><a href="#">Контакты </a></li>
               <li><a href="#">Оптовикам </a></li>
-              <li><a href="#">Оптовикам </a></li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">Акции и скидки</a></li>
+              <li><a href="#">Поставщикам </a></li>
+              <li class="mobile-hide-list"><a href="#">Доставка и оплата</a></li>
+              <li class="mobile-hide-list"><a href="#">Акции и скидки</a></li>
+              <li class="mobile-sub-list"><a href="#">Eще <div class="burger-list"><span></span>
+                    <span></span>
+                    <span></span></div></a></li>
             </ul>
           </nav>
           <div class="sign-in-registration">
@@ -55,15 +63,15 @@
             </div>
             <div class="header__options">
               <a href="#" class="header__options__item garage">
-                <div class="icon"><img src="./img/garageIcon.svg" alt=""Icon></div>
+                <div class="icon"><img src="./img/garageIcon.svg" alt="" Icon></div>
                 <p class="title">Гараж</p>
               </a>
               <a href="#" class="header__options__item favorite">
-                <div class="icon"><img src="./img/favoriteIcon.svg" alt=""Icon></div>
+                <div class="icon"><img src="./img/favoriteIcon.svg" alt="" Icon></div>
                 <p class="title">Избранное</p>
               </a>
               <a href="#" class="header__options__item basket">
-                <div class="icon"><img src="./img/basketIcon.svg" alt=""Icon></div>
+                <div class="icon"><img src="./img/basketIcon.svg" alt="" Icon></div>
                 <p class="title">Корзина</p>
               </a>
             </div>
@@ -72,6 +80,18 @@
       </div>
     </div>
   </header>
+  <div class="mobile-menu">
+    <nav class="menu">
+      <ul>
+        <li><a href="#">О компании </a></li>
+        <li><a href="#">Контакты </a></li>
+        <li><a href="#">Оптовикам </a></li>
+        <li><a href="#">Поставщикам </a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Акции и скидки</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="breadcrumb">
     <div class="container">
       <div class="breadcrumb__wrapper">
@@ -108,9 +128,9 @@
           <div class="characteristics">
             <div class="characteristics__left-side">
               <p class="characteristics__item">Годы выпуска: </p>
-              <p class="characteristics__item">Кузов:  </p>
+              <p class="characteristics__item">Кузов: </p>
               <p class="characteristics__item">Двигатель: </p>
-              <p class="characteristics__item">Обьем:  </p>
+              <p class="characteristics__item">Обьем: </p>
             </div>
             <div class="characteristics__right-side">
               <p class="characteristics__item">2003 - наст. вр.</p>
@@ -237,12 +257,13 @@
     <div class="container">
       <div class="submit_application__wrapper">
         <div class="left-content">
-          <h2 class="section-title"><span>Не нашли</span> или <span>не хотите искать</span> на сайте нужную запчасть?</h2>
+          <h2 class="section-title"><span>Не нашли</span> или <span>не хотите искать</span> на сайте нужную запчасть?
+          </h2>
           <p class="sub-title">Мы поможем Вам подобрать запчасти! Просто оставьте заявку и мы с Вами свяжемся</p>
           <div class="description">
             <p class="description__item">Поможем найти запчасти без
               каталожного номера по описанию
-              или фото, расскажем о наличии   </p>
+              или фото, расскажем о наличии </p>
             <p class="description__item">Рассчитаем запчасти
               в 3-х ценовых категориях:
               оригинальные, аналоги, б/у</p>
@@ -274,7 +295,7 @@
         </div>
         <div class="right-content">
           <nav class="menu">
-            <ul>
+            <ul class="mobile-footer-menu">
               <li class="list-title">О компании</li>
               <li><a href="#">О компании</a></li>
               <li><a href="#">Адреса офисов</a></li>
@@ -283,7 +304,7 @@
               <li><a href="#">Правовая информация</a></li>
               <li><a href="#">Обратная связь</a></li>
             </ul>
-            <ul>
+            <ul class="mobile-footer-menu">
               <li class="list-title">Интернет магазин</li>
               <li><a href="#">Розничным клиентам</a></li>
               <li><a href="#">Доставка и оплата</a></li>
@@ -292,7 +313,7 @@
               <li><a href="#">Vin запрос</a></li>
               <li><a href="#">Каталог</a></li>
             </ul>
-            <ul>
+            <ul class="mobile-footer-menu">
               <li class="list-title">Сотрудничество</li>
               <li><a href="#">Оптовикам</a></li>
               <li><a href="#">Поставщикам</a></li>
